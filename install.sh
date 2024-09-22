@@ -28,6 +28,7 @@ BASH
 fi
 
 install -b .zshrc "${HOME}/.zshrc"
+install -b .p10k.zsh "${HOME}/.p10k.zsh"
 
 curl --fail --silent --show-error --location --output omz-install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
