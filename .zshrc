@@ -1,5 +1,5 @@
 # Start tmux
-export TMUX_TMPDIR="$TMPDIR"
+export TMUX_TMPDIR="$HOME"
 export EDITOR=nvim
 if [[ -z "${TMUX}" ]] && (( $+commands[tmux] )) && tmux -V &>/dev/null; then
   # tmux new-session -d -s workbrew -c ~/Workbrew &>/dev/null
