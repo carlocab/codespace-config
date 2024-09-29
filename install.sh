@@ -44,3 +44,4 @@ install -b -m 644 Brewfile "${HOME}/Brewfile"
 install -b -m 644 environment.zsh "${ZSH_CUSTOM}/environment.zsh"
 
 ~/.config/tmux/plugins/tpm/bin/install_plugins
+"${ZSH_CUSTOM}/themes/powerlevel10k/gitstatus/install"
