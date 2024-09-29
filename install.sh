@@ -16,10 +16,13 @@ if [[ -r Brewfile ]] && ! brew bundle check; then
 fi
 
 if [[ -f ~/.bashrc ]]; then
-    grep EDITOR ~/.bashrc || echo "export EDITOR=nvim" >> ~/.bashrc
     if ! grep TMUX_TMPDIR ~/.bashrc; then
         cat <<'BASH' >> ~/.bashrc
-command -v zsh &>/dev/null && exec zsh
+
+[[ -x /home/linuxbrew/.linuxbrew/bin/zsh ]] && exec /home/linuxbrew/.linuxbrew/bin/zsh -l
+command -v zsh &>/dev/null && exec zsh -l
+
+export EDITOR=nvim
 export TMUX_TMPDIR="${HOME}"
 if [[ -z "${TMUX}" ]] && command -v tmux &>/dev/null; then
     exec tmux new-session -A -s main
