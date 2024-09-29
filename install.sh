@@ -37,8 +37,9 @@ export ZSH_CUSTOM="${HOME}/.config/zsh/custom"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
-install -b -m 644 .zshrc "${HOME}/.zshrc"
-install -b -m 644 .p10k.zsh "${HOME}/.p10k.zsh"
+install -b -m 644 zshenv "${HOME}/.zshenv"
+install -b -m 644 zshrc "${HOME}/.config/zsh/.zshrc"
+install -b -m 644 p10k.zsh "${HOME}/.config/zsh/p10k.zsh"
 install -b -m 644 tmux.conf "${HOME}/.config/tmux/tmux.conf"
 install -b -m 644 Brewfile "${HOME}/Brewfile"
 install -b -m 644 environment.zsh "${ZSH_CUSTOM}/environment.zsh"
