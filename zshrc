@@ -29,8 +29,8 @@ plugins=(
     git
     command-not-found
     pip
-    macos
     fzf
+    F-Sy-H
     history-substring-search
 )
 

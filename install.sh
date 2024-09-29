@@ -34,7 +34,8 @@ bash omz-install.sh --skip-chsh --unattended --keep-zshrc
 
 export ZSH_CUSTOM="${HOME}/.config/zsh/custom"
 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM}/themes/powerlevel10k"
+git clone https://github.com/z-shell/F-Sy-H.git "${ZSH_CUSTOM}/plugins/F-Sy-H"
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 install -b -m 644 zshenv "${HOME}/.zshenv"
