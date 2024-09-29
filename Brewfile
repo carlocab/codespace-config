@@ -1,5 +1,7 @@
+tap "homebrew/services"
 brew "bat"
 brew "eza"
+brew "fastfetch"
 brew "fd"
 brew "fzf"
 brew "gh"
