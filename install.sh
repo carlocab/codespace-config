@@ -40,5 +40,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 install -b -m 644 .zshrc "${HOME}/.zshrc"
 install -b -m 644 .p10k.zsh "${HOME}/.p10k.zsh"
 install -b -m 644 tmux.conf "${HOME}/.config/tmux/tmux.conf"
+install -b -m 644 Brewfile "${HOME}/Brewfile"
 
 ~/.config/tmux/plugins/tpm/bin/install_plugins
