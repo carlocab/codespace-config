@@ -11,6 +11,10 @@ if [[ ! -d /home/linuxbrew/.linuxbrew ]] || [[ ! -x /home/linuxbrew/.linuxbrew/b
     bash -c "$(curl --fail --silent --show-error --location https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+if ! command -v brew &>/dev/null && [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 if [[ -r Brewfile ]] && ! brew bundle check; then
     brew bundle install
 fi
