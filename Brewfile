@@ -1,4 +1,3 @@
-tap "homebrew/services"
 brew "bat"
 brew "eza"
 brew "fastfetch"
